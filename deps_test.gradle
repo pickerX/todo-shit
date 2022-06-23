@@ -1,0 +1,8 @@
+import io.km.todo.buildsrc.Libs
+
+dependencies {
+    testImplementation(Libs.Test.junit)
+    testImplementation(Libs.Test.truth)
+    testImplementation(Libs.Test.archCore)
+    testImplementation(Libs.Test.mockk)
+}

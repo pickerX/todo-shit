@@ -1,0 +1,10 @@
+import io.km.todo.buildsrc.Libs
+
+// androidX dependencies here
+dependencies {
+    implementation(Libs.Androidx.appCompat)
+    implementation(Libs.Androidx.material)
+    implementation(Libs.Androidx.coreKtx)
+    implementation(Libs.Androidx.activityKtx)
+    implementation(Libs.Androidx.fragmentKtx)
+}

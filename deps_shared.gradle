@@ -1,0 +1,20 @@
+import io.km.todo.buildsrc.Libs
+
+dependencies {
+    // desugar
+    coreLibraryDesugaring(Libs.desugar)
+
+    // kotlin
+    implementation(Libs.Kotlin.kotlin)
+
+    // coroutine
+    implementation(Libs.Coroutines.coroutineCore)
+    implementation(Libs.Coroutines.coroutineAndroid)
+    testImplementation(Libs.Coroutines.coroutineTest)
+
+    // dependency injection
+    implementation(Libs.Dagger.dagger)
+    kapt(Libs.Dagger.daggerCompiler)
+    implementation(Libs.Dagger.daggerHilt)
+    kapt(Libs.Dagger.daggerHiltCompiler)
+}

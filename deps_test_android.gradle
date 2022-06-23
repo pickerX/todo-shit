@@ -1,0 +1,9 @@
+import io.km.todo.buildsrc.Libs
+
+dependencies {
+    testImplementation(Libs.Test.testCore)
+    testImplementation(Libs.Test.espresso)
+    testImplementation(Libs.Test.extJunitKtx)
+    testImplementation(Libs.Test.extTruth)
+    testImplementation(Libs.Test.benchmark)
+}
