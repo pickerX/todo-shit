@@ -1,0 +1,17 @@
+import io.km.todo.buildsrc.Libs
+
+// compose dependencies here
+dependencies {
+    implementation(Libs.Compose.activityCompose)
+    implementation(Libs.Compose.navigationCompose)
+    implementation(Libs.Compose.viewModelCompose)
+    implementation(Libs.Compose.hiltNavigationCompose)
+    implementation(Libs.Compose.composeUi)
+    implementation(Libs.Compose.composeUiTooling)
+    implementation(Libs.Compose.composeCompiler)
+    implementation(Libs.Compose.composeMaterial)
+    implementation(Libs.Compose.composeFoundation)
+    implementation(Libs.Compose.composeAnimation)
+    implementation(Libs.Compose.composeIconsCore)
+    implementation(Libs.Compose.composeIconsExtended)
+}
