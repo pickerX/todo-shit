@@ -104,6 +104,11 @@ object Libs {
         const val viewmodelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     }
 
+    object Material3 {
+        const val core = "com.google.android.material:material:1.6.0-alpha03"
+        const val compose = "androidx.compose.material3:material3:1.0.0-alpha10"
+    }
+
     object Dagger {
         // dependency injection
         const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
