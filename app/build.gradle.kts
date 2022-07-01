@@ -1,3 +1,5 @@
+import io.km.todo.buildsrc.Libs.Material3
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -6,6 +8,7 @@ plugins {
 }
 
 apply {
+    from("../deps_androidx.gradle")
     from("../deps_compose.gradle")
     from("../deps_shared.gradle")
     from("../deps_test.gradle")
@@ -44,10 +47,8 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.appcompat:appcompat:1.3.0")
-    implementation("com.google.android.material:material:1.4.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    implementation(project(":base"))
+
+    implementation(Material3.core)
+    implementation(Material3.compose)
 }
