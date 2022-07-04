@@ -44,6 +44,15 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        compose = true
+        viewBinding = true
+
+        // Disable unused AGP features
+        aidl = false
+        renderScript = false
+        shaders = false
+    }
 }
 
 dependencies {

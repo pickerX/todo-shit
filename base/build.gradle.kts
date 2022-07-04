@@ -1,5 +1,5 @@
-import io.km.todo.buildsrc.Libs
 import io.km.todo.buildsrc.Configs
+import io.km.todo.buildsrc.Libs
 import io.km.todo.buildsrc.Versions
 
 plugins {
@@ -47,6 +47,18 @@ android {
 
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    buildFeatures {
+        compose = true
+        viewBinding = true
+
+        // Disable unused AGP features
+        buildConfig = false
+        aidl = false
+        renderScript = false
+        resValues = false
+        shaders = false
     }
 }
 

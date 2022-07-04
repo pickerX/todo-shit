@@ -38,4 +38,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        // Disable unused AGP features
+        buildConfig = false
+        aidl = false
+        renderScript = false
+        resValues = false
+        shaders = false
+    }
+
 }
