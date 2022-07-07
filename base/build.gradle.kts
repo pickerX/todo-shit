@@ -82,4 +82,7 @@ dependencies {
     // image
     api(Libs.Image.coil)
     api(Libs.Image.coilCompose)
+
+    // material3
+    api(Libs.Material3.compose)
 }

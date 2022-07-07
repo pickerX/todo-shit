@@ -14,7 +14,7 @@ object Versions {
     const val buildGradle = "7.0.0"
     const val kotlin = "1.6.21"
     const val coroutine = "1.5.2"
-    const val compose = "1.0.1"
+    const val compose = "1.2.0-alpha08"
     const val lifecycle = "2.4.0"
     const val navigation = "2.3.5"
     const val room = "2.3.0"
@@ -105,8 +105,8 @@ object Libs {
     }
 
     object Material3 {
-        const val core = "com.google.android.material:material:1.6.0-alpha03"
-        const val compose = "androidx.compose.material3:material3:1.0.0-alpha10"
+        const val compose = "androidx.compose.material3:material3:1.0.0-alpha14"
+        const val windowSize = "androidx.compose.material3:material3-window-size-class:1.0.0-alpha14"
     }
 
     object Dagger {

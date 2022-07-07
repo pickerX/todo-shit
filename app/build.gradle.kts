@@ -58,6 +58,5 @@ android {
 dependencies {
     implementation(project(":base"))
 
-    implementation(Material3.core)
     implementation(Material3.compose)
 }
